@@ -1,13 +1,41 @@
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 body {
     background-image: url("../images/baixados.jpg");
     background-size: auto 100vh;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: whitesmoke;
+    font-size: 23px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+@media (max-width: 520px) {
+    .menu {
+        font-size: 19px;
+    }
+}
+@media (min-width: 520px) {
+    body {
+        font-size: 27px;
+    }
 }
 
 h1, 
@@ -18,12 +46,17 @@ p {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover {
     text-decoration: underline;
-    color: black;
+    color: burlywood;
+}
+
+.menu a {
+    padding: 10px 20px;
+    display: block;
 }
 
 .menu ul {
@@ -38,3 +71,18 @@ a:hover {
 .subtitle {
     text-align: center;
 }
+
+.subtitle {
+    font-style: italic;
+}
+
+.logos {
+    width: 40px;
+    height: 40px;
+}
+
+figcaption {
+    color: white;
+}
+
+
