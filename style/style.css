@@ -7,7 +7,7 @@
 body {
     background-image: url("../images/baixados.jpg");
     background-size: auto 100vh;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'DM Mono', monospace;
 }
 
 
@@ -32,14 +32,19 @@ header {
         font-size: 19px;
     }
 }
+
+.linguagens h1 {
+    font-size: 50px;
+}
+
 @media (min-width: 520px) {
     body {
         font-size: 27px;
     }
 }
-
 h1, 
-h2, 
+h2,
+h3, 
 p {
       color: white
 }
@@ -77,12 +82,34 @@ a:hover {
 }
 
 .logos {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+}
+.logos-html {
+    width: 45px;
+    height: 60px;
 }
 
 figcaption {
     color: white;
 }
 
+.linguagens figure {
+    text-align: center;
+}
 
+.linguagens .grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 150px);
+}
+
+@media (max-width: 520px) {
+    .linguagens .grid{
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+
+h3 {
+    padding: 10px;
+}
